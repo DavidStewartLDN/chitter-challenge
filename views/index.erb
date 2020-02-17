@@ -8,4 +8,12 @@
       <input type='submit' value='Add peep'>
     </form>
   </div>
+  <div>
+    <h1> The Peep Feed </h1>
+    <ul>
+        <% @peeps.each do |peep| %>
+            <li><%= peep.text %></li>
+        <% end %>
+    </ul>
+  </div>
 </body>
